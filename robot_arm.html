@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Project7_Part2_Robot Arm</title>
+
+    <script type="text/javascript" src="Common/initShaders2.js"></script>
+    <script type="text/javascript" src="Common/MVnew.js"></script>
+    <script type="text/javascript" src="Common/flatten.js"></script>
+    <script type="text/javascript" src="robot_arm.js"></script>
+  </head>
+
+  <body>
+    <div id="controls">
+      <h3>How to Control</h3>
+      <p>Press the following buttons with shift to do the reverse</p>
+      <ul>
+        <li><b>S/s:</b> Rotate shoulder</li>
+        <li><b>E/e:</b> Rotate elbow</li>
+        <li><b>F/f:</b> Rotate fingers</li>
+        <li><b>X/x:</b> Rotate view around X-axis</li>
+        <li><b>Y/y:</b> Rotate view around Y-axis</li>
+        <li><b>A/a:</b> Rotate fingers around X-axis</li>
+        <li><b>B/b:</b> Rotate fingers around X-axis (opposite)</li>
+        <li><b>M/m:</b> Rotate fingers around Y-axis</li>
+        <li><b>N/n:</b> Rotate fingers around Y-axis (opposite)</li>
+        <li><b>T:</b> Toggle wire/solid cube</li>
+        <li><b>P:</b> Toggle projection type</li>
+      </ul>
+    </div>
+    <!-- This is the canvas - the only HTML element that can render WebGL 
+         graphics. You can have more than one WebGL canvas on a web page, but
+         that gets tricky. Stick to one per page for now. -->
+    <canvas id="gl-canvas" width="512" height="512">
+      Oops ... your browser doesn't support the HTML5 canvas element
+    </canvas>
+  </body>
+</html>
